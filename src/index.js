@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createStore} from 'redux'
+//combineReducers berfungsi untuk menjadikan semua reducer jdi satu
+import allReducers from './reducers/index'
+import { Provider } from 'react-redux';
+
+const store=createStore(allReducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+
 
 ReactDOM.render(
+  
   <React.StrictMode>
+    <Provider store={store}>
     <App />
-  </React.StrictMode>,
+    </Provider>
+  </React.StrictMode>
+  ,
   document.getElementById('root')
 );
 
