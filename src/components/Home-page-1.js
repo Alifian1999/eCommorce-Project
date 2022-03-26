@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Page1(){
- 
-
     return(
         <div className="container-home-page-1">
             <div className="container-home-page-1-header">
@@ -12,7 +10,7 @@ export default function Page1(){
                 <button>Shop All</button>
             </div>
             <div className="container-home-page-1-main-image">
-                <img className="image-main" src="/images/images-project/etihad.png" />
+                <img className="image-main" src="/images/images-project/etihad.png" alt=""/>
             </div>
             <div className="container-footer-megazine">
                 <div className="footer-megazine">

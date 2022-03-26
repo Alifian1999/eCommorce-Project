@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from 'react-router-dom'
 import { useSelector } from "react-redux";
+import '../componentsStyle/navbar.css'
 
 
 export default function NavbarSection(){
     const counter= useSelector(state=>state.reducer)
-    
     return(
         <div className="navbar-section-container">
             <div className='navbar-container-b'>
@@ -26,7 +26,7 @@ export default function NavbarSection(){
                         <p className='menu-right-side-main-child-a-section'><img src='/images/project/cart-m.svg' alt='' /></p>
                         <p className='menu-right-side-main-child'>{counter}</p>
                     </div>
-                    <span className='menu-right-side'>Sign In</span>
+                    <Link to='/sign-in' className='menu-right-side'>Sign In</Link>
                     <Link to='/sign-up' className='menu-right-side'>Sign Up</Link>
                 </div>
             </div>

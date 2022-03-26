@@ -66,13 +66,13 @@ export default function ProductInfo(){
                     </div>
                     <p className="header-size">Size</p>
                     <div className="size-description-product-info">
-                        <span className="size-description-product-info-margin">XS</span>
-                        <span className="size-description-product-info-1">S</span>
-                        <span className="size-description-product-info-1">M</span>
-                        <span className="size-description-product-info-1">L</span>
-                        <span className="size-description-product-info-2">XL</span>
-                        <span className="size-description-product-info-3">XXL</span>
-                        <span className="size-description-product-info-3">3XL</span>
+                        <button className="size-description-product-info-margin">XS</button>
+                        <button className="size-description-product-info-1">S</button>
+                        <button className="size-description-product-info-1">M</button>
+                        <button className="size-description-product-info-1">L</button>
+                        <button className="size-description-product-info-2">XL</button>
+                        <button className="size-description-product-info-3">XXL</button>
+                        <button className="size-description-product-info-3">3XL</button>
                     </div>
                     <p className="header-height-model">Size & Fit Guide</p>
                     <div className="container-cart-and-model">

@@ -1,11 +1,18 @@
+.mk{
+  margin: auto;
+  font-weight: bolder;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .navbar-container-a{
-  padding: 0px 0px;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0px 90px;
   background-color: black;
   color: white;
+  margin: 0;
 }
 
 .navbar-container-a p{

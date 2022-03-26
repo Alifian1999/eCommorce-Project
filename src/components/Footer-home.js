@@ -1,7 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import '../componentsStyle/footer.css'
 
-export default function FooterHome(){
+export default function FooterHome(props){
+    useEffect(()=>{
+        console.log(props);
+    if(props.id===undefined){
+        console.log('params adalah undefined');
+    }else{
+        
+        console.log('params = '+props.id.id);
+    }
+    },[])
+    
+    
     return(
         <div className="footer-home-container">
             <div className="footer-home-container-header">
@@ -15,7 +28,7 @@ export default function FooterHome(){
             </div>
             <div className="footer-home-container-menu">
                 <h3>Shop</h3>
-                <p><Link to='/women-section'>Women’s</Link></p>
+                <p><Link to={`/women-section/4`}>Women’s</Link></p>
                 <p><Link to='/men-section'>Men’s</Link></p>
                 <p>Kids’</p>
                 <p>Shoes</p>
